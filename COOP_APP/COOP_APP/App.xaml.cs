@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using COOP_APP.Views;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace COOP_APP
 {
@@ -11,7 +12,7 @@ namespace COOP_APP
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            return new Window(new LoginViews());
         }
     }
 }

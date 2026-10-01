@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="COOP_APP.Views.LoginViews"
+             Title="LoginViews">
+    
+    <Grid RowDefinitions=".3*,.7*">
+        
+        <Image Aspect="AspectFill" Source="billetesv2.jpg"/>
+        
+        <Grid BackgroundColor="PaleGreen" Opacity=".9"/>
+        
+        <Grid ColumnDefinitions="*">
+            <Image Aspect="AspectFit"
+                   HeightRequest="200"
+                   Source="logocoopv2.png"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <RoundRectangle Margin="-5,-30,-5,-2"
+                            CornerRadius="30,30,0,0"
+                            Fill="White"/>
+
+            <VerticalStackLayout Margin="30,0,30,0">
+                <Label FontAttributes="Bold"
+                       FontFamily="bold"
+                       FontSize="Medium"
+                       Text="Bienvenidos"
+                       TextColor="DarkGreen"/>
+
+                <Label FontFamily="medium"
+                       Text="iniciar sesión"
+                       TextColor="Black"/>
+
+                <Grid Margin="0,30,0,0" ColumnDefinitions=".2*,.8*">
+                    <RoundRectangle 
+                        Fill="LightGray"
+                        CornerRadius="15"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="60"/>
+                    
+                    <Image HorizontalOptions="Center">
+                        <Image.Source>
+                            <FontImageSource 
+                                FontFamily="FontAwesomeBrands900"
+                                Glyph="&#xf0e0;"
+                                Color="DarkGreen"
+                                Size="30"/>
+                        </Image.Source>
+                    </Image>
+
+                    <Entry Grid.Column="1"
+                           Placeholder="Email"
+                           Text="Email"
+                           FontFamily="bold"
+                           VerticalOptions="Center">
+                        
+                    </Entry>
+
+                </Grid>
+
+                <Grid Margin="0,30,0,0" ColumnDefinitions=".2*,.8*">
+                    <RoundRectangle 
+                        Fill="LightGray"
+                        CornerRadius="15"
+                        HeightRequest="60"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="60"/>
+
+                    <Image HorizontalOptions="Center">
+                        <Image.Source>
+                            <FontImageSource 
+                                FontFamily="FontAwesomeBrands900"
+                                Glyph="&#xf0e0;"
+                                Color="DarkGreen"
+                                Size="30"/>
+                        </Image.Source>
+                    </Image>
+
+                    <Entry Grid.Column="1"
+                           Placeholder="Clave"
+                           IsPassword="True"
+                           Text="Clave"
+                           FontFamily="bold"
+                           VerticalOptions="Center">
+
+                    </Entry>
+
+                </Grid>
+
+                <Button 
+                    Margin="0,20,0,0"
+                    BackgroundColor="LightGreen"
+                    HeightRequest="60"
+                    Text="Ingresar"
+                    TextColor="Black">
+                </Button>
+
+                <Label Margin="0,20,0,-10"
+                       HorizontalOptions="Center"
+                       Text="Forgot yout password"
+                       TextColor="DarkGreen"
+                       TextDecorations="Underline">
+                </Label>
+
+                <Button 
+                    Margin="0,20,0,0"
+                    BackgroundColor="WhiteSmoke"
+                    HeightRequest="60"
+                    Text="Crear una cuenta"
+                    TextColor="Black">
+                </Button>
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
