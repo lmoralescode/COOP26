@@ -53,8 +53,9 @@
 
                     <Entry Grid.Column="1"
                            Placeholder="Email"
-                           Text="Email"
                            FontFamily="bold"
+                           FontAttributes="Bold"
+                           Keyboard="Email"
                            VerticalOptions="Center">
                         
                     </Entry>
@@ -83,8 +84,9 @@
                     <Entry Grid.Column="1"
                            Placeholder="Clave"
                            IsPassword="True"
-                           Text="Clave"
                            FontFamily="bold"
+                           FontAttributes="Bold"
+                           Keyboard="Password"
                            VerticalOptions="Center">
 
                     </Entry>
@@ -98,7 +100,8 @@
                     Text="Ingresar"
                     TextColor="Black"
                     FontSize="Medium"
-                    FontAttributes="Bold">
+                    FontAttributes="Bold"
+                    FontFamily="Bold">
                 </Button>
 
                 <Label Margin="0,20,0,-10"
@@ -114,7 +117,9 @@
                     HeightRequest="60"
                     Text="Crear una cuenta"
                     TextColor="Black"
-                    FontAttributes="Bold">
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    FontFamily="Bold">
                 </Button>
 
             </VerticalStackLayout>
