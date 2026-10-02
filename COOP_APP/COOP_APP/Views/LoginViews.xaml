@@ -13,6 +13,7 @@
         <Grid ColumnDefinitions="*">
             <Image Aspect="AspectFit"
                    HeightRequest="200"
+                   Margin="0,0,0,30"
                    Source="logocoopv2.png"/>
         </Grid>
         <Grid Grid.Row="1">
@@ -73,7 +74,7 @@
                         <Image.Source>
                             <FontImageSource 
                                 FontFamily="FontAwesomeBrands900"
-                                Glyph="&#xf0e0;"
+                                Glyph="&#xf007;"
                                 Color="DarkGreen"
                                 Size="30"/>
                         </Image.Source>
@@ -95,7 +96,9 @@
                     BackgroundColor="LightGreen"
                     HeightRequest="60"
                     Text="Ingresar"
-                    TextColor="Black">
+                    TextColor="Black"
+                    FontSize="Medium"
+                    FontAttributes="Bold">
                 </Button>
 
                 <Label Margin="0,20,0,-10"
@@ -107,10 +110,11 @@
 
                 <Button 
                     Margin="0,20,0,0"
-                    BackgroundColor="WhiteSmoke"
+                    BackgroundColor="LightGrey"
                     HeightRequest="60"
                     Text="Crear una cuenta"
-                    TextColor="Black">
+                    TextColor="Black"
+                    FontAttributes="Bold">
                 </Button>
 
             </VerticalStackLayout>
