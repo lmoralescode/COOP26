@@ -51,13 +51,14 @@
                         </Image.Source>
                     </Image>
 
-                    <Entry Grid.Column="1"
+                    <Entry x:Name="txtEmail"
+                           Grid.Column="1"
                            Placeholder="Email"
                            FontFamily="bold"
                            FontAttributes="Bold"
                            Keyboard="Email"
                            VerticalOptions="Center">
-                        
+
                     </Entry>
 
                 </Grid>
@@ -81,7 +82,8 @@
                         </Image.Source>
                     </Image>
 
-                    <Entry Grid.Column="1"
+                    <Entry x:Name="txtClave"
+                           Grid.Column="1"
                            Placeholder="Clave"
                            IsPassword="True"
                            FontFamily="bold"
